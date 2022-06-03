@@ -5,7 +5,11 @@ document.querySelector('#cadastro').addEventListener('click', (w) => {
     w.preventDefault();
     let email = document.querySelector('#login').value;
     let senha = document.querySelector('#senha').value;
-    salvar(email, senha);
+    if (email === '' || senha === ''){
+        alert("preencha os campos")
+    }else if (email != '' || senha != ''){
+        salvar(email, senha);
+    }
 });
 function salvar(e, s) {
     //verifica se tem dados no localstorage, se não, cria um vetor vazio
