@@ -1,0 +1,2 @@
+# naodeucerto
+odeio minha vida
